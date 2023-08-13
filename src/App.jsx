@@ -10,12 +10,6 @@ function App() {
     store.dispatch(cakeActions.ordered());
   }, []);
 
-  useEffect(() => {
-    store.subscribe(() => {
-      console.log(store.getState());
-    });
-  }, []);
-
   return <>op</>;
 }
 
