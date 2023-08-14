@@ -6,8 +6,6 @@ import { store } from "./store";
 function App() {
   useEffect(() => {
     store.dispatch(cakeActions.ordered());
-    store.dispatch(cakeActions.ordered());
-    store.dispatch(cakeActions.ordered());
   }, []);
 
   return <>op</>;
