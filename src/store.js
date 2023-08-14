@@ -6,7 +6,7 @@ import userReducer from "./features/user/userSlice";
 
 const logger = createLogger();
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
     cake: cakeReducer,
     icecream: icecreamReducer,
@@ -14,3 +14,5 @@ export const store = configureStore({
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
+
+export default store;
