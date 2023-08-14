@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cakeReducer from "./features/cake/cakeSlice";
 import { createLogger } from "redux-logger";
+import cakeReducer from "./features/cake/cakeSlice";
 import icecreamReducer from "./features/icecream/icecreamSlice";
 import userReducer from "./features/user/userSlice";
 

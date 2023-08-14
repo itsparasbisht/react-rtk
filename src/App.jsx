@@ -1,16 +1,16 @@
-import { useEffect } from "react";
 import "./App.css";
-import { cakeActions } from "./features/cake/cakeSlice";
-import { fetchUsers } from "./features/user/userSlice";
-import { store } from "./store";
+import CakeView from "./features/cake/CakeView";
+import IcecreamView from "./features/icecream/IcecreamView";
+import UserView from "./features/user/UserView";
 
 function App() {
-  useEffect(() => {
-    // store.dispatch(cakeActions.ordered());
-    store.dispatch(fetchUsers());
-  }, []);
-
-  return <>op</>;
+  return (
+    <div className="App">
+      <CakeView />
+      <IcecreamView />
+      <UserView />
+    </div>
+  );
 }
 
 export default App;
