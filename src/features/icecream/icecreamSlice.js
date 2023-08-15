@@ -17,7 +17,9 @@ const icecreamSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(cakeOrdered, (state) => state.numOfIcecreams--);
+    builder.addCase(cakeOrdered, (state) => {
+      state.numOfIcecreams--;
+    });
   },
 });
 
